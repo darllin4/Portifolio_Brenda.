@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio | Brenda</title>
+  <link rel="stylesheet" href="css/galeria-style.css">
+</head>
+<body>
+
+<header>
+  <div class="menu-bar">
+    <nav>
+      <a href="edicao.html">Sobre</a>
+      <a href="artigos.html">Serviços</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+  
+  <!-- Seção Galeria -->
+ <section>
+  <h2>Alguns Trabalhos</h2>
+
+  <h3>Reels para perfumaria (roteiro + edição)</h3>
+  <div class="grid">
+    <div>
+      <video src="videos/video1.mp4" controls></video>
+      <p>VÍDEO 1</p>
+    </div>
+    <div>
+      <video src="videos/videos2.mp4" controls></video>
+      <p>VÍDEO 2</p>
+    </div>
+  </div>
+
+  <h3>Reels para Òtica (Roteiro + Edição)</h3>
+  <div class="grid">
+    <div>
+      <video src="videos/video3.mp4" controls></video>
+      <p>VÍDEO 3</p>
+    </div>
+     <div>
+      <video src="videos/video4.mp4" controls></video>
+      <p>VÍDEO 4</p>
+    </div>
+  </div>
+
+   <h3>Reels para Quiosque Loreal (Roteiro + Edição)</h3>
+  <div class="grid">
+    <div>
+      <video src="videos/video5.mp4" controls></video>
+      <p>VÍDEO 5</p>
+    </div>
+     <div>
+      <video src="videos/video6.mp4" controls></video>
+      <p>VÍDEO 6</p>
+    </div>
+</div>
+
+     <h3>Captação e Edição de conteúdo em vídeo</h3>
+  <div class="grid">
+    <div>
+      <video src="videos/video7.mp4" controls></video>
+      <p>VÍDEO 7</p>
+    </div>
+     <div>
+      <video src="videos/video8.mp4" controls></video>
+      <p>VÍDEO 8</p>
+    </div>
+  </div>
+
+     <h3>Conteúdo para dentista (Edição)</h3>
+  <div class="grid">
+    <div>
+      <video src="videos/video9.mp4" controls></video>
+      <p>VÍDEO 9</p>
+    </div>
+     <div>
+      <video src="videos/video10.mp4" controls></video>
+      <p>VÍDEO 10</p>
+    </div>
+  </div>
+
+     <h3>Conteúdo para Digital Influencer (Captação e Edição)</h3>
+  <div class="grid">
+    <div>
+      <video src="videos/video11.mp4" controls></video>
+      <p>VÍDEO 11</p>
+    </div>
+     <div>
+      <video src="videos/video12.mp4" controls></video>
+      <p>VÍDEO 12</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ⬇️ Aqui entra o botão de voltar -->
+<div class="voltar">
+  <a href="index.html">⬅ Voltar para o Início</a>
+</div>
+
+
+  <!-- Rodapé -->
+  <footer> <!-- Fim do site, rodapé -->
+    <p>&copy; 2025 | Feito por Bea</p> <!-- Texto do rodapé -->
+  </footer>
+
+  <!-- JavaScript para transição de páginas -->
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    if (link.hostname === window.location.hostname) {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && !href.startsWith('#') && !href.startsWith('mailto')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    }
+  });
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio | Brenda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Meu Portifólio </h1>
+  <div class="menu-bar">
+    <nav>
+      <a href="edicao.html">Sobre</a>
+      <a href="artigos.html">Serviços</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav> 
+  </div>
+</header>
+
+<section>
+  <h2>Seja bem-vindo ao Meu portifólio</h2>
+  <p> 
+    Sua marca pode mais e eu sei como mostrar isso.
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 | Feito por Bea</p>
+</footer>
+
+<!-- JavaScript para transição de páginas -->
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    if (link.hostname === window.location.hostname) {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && !href.startsWith('#') && !href.startsWith('mailto')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

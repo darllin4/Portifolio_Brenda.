@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio | Brenda</title>
+  <link rel="stylesheet" href="css/cssboom-style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+      <a href="edicao.html">Sobre</a>
+      <a href="artigos.html">Serviços</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<header>
+    <h1>Quem sou eu?</h1>
+    <p class="manifesto">
+       Sou a Brenda Feitosa, Social Media especialista em transformar perfis em marcas desejadas.<br>
+       Tenho experiência com criação de conteúdo estratégico, edição de vídeos,<br>
+       planejamento de calendário de postagens e muito mais.       
+    </p>
+  </header>
+
+  <section>
+    <h2>Objetivo</h2>
+    <p>Minha missão é ajudar marcas e profissionais a se comunicarem<br>
+     de forma autêntica, criativa e eficiente nas redes sociais.</p>
+  </section>
+
+ <!-- ⬇️ Aqui entra o botão de voltar -->
+<div class="voltar">
+  <a href="index.html">⬅ Voltar para o Início</a>
+</div>
+
+  <footer>
+    <p>&copy; 2025 | Feito por Bea</p>
+  </footer>
+</body>
+</html>
+
+  <!-- JavaScript para transição de páginas -->
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    if (link.hostname === window.location.hostname) {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && !href.startsWith('#') && !href.startsWith('mailto')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    }
+  });
+</script>

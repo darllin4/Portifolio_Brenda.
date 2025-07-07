@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio | Brenda</title>
+  <link rel="stylesheet" href="css/artigos-style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+     <a href="edicao.html">Sobre</a>
+     <a href="artigos.html">Serviços</a>
+     <a href="galeria.html">Galeria</a>
+     <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+ <!-- Seção Artigos -->
+  <section id="artigos"> <!-- Bloco da seção Artigos -->
+    <h2>O que eu ofereço?</h2>
+    <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Gestão completa de redes sociais</p> <!-- Texto do artigo -->
+    </div>
+    <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Criação de conteúdos (Vídeos como Reels e Stories)</p> <!-- Texto do artigo -->
+    </div>
+    <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Planejamento estratégico de postagens</p> <!-- Texto do artigo -->
+    </div>
+    <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Edição de vídeos para as redes sociais</p> <!-- Texto do artigo -->
+    </div>
+    <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Análise de métricas e entrega de relatórios</p> <!-- Texto do artigo -->
+    </div>
+     <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Consultoria personalizada</p> <!-- Texto do artigo -->
+    </div>
+    <div class="artigo"> <!-- Bloco de um artigo -->
+      <p>Tráfego pago</p> <!-- Texto do artigo -->
+    </div>
+  </section>
+
+  <!-- ⬇️ Aqui entra o botão de voltar -->
+<div class="voltar">
+  <a href="index.html">⬅ Voltar para o Início</a>
+</div>
+
+  <!-- Rodapé -->
+  <footer> <!-- Fim do site, rodapé -->
+    <p>&copy; 2025 | Feito por Bea</p> <!-- Texto do rodapé -->
+  </footer>
+
+  <!-- JavaScript para transição de páginas -->
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    if (link.hostname === window.location.hostname) {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && !href.startsWith('#') && !href.startsWith('mailto')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    }
+  });
+</script>
